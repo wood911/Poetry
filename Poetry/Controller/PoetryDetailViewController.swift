@@ -41,6 +41,13 @@ class PoetryDetailViewController: UIViewController, AVSpeechSynthesizerDelegate,
         
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        if speech.isSpeaking {
+            speech.stopSpeaking(at: .immediate)
+        }
+    }
+    
     func speechPoetry(_ sender: UIBarButtonItem) {
         if speech.isSpeaking {
             speech.stopSpeaking(at: .immediate)
