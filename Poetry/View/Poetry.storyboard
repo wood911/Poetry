@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XVJ-qp-oxb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XVJ-qp-oxb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -90,7 +90,13 @@
                             <constraint firstItem="Xdm-V6-Lhg" firstAttribute="leading" secondItem="yVu-pR-o4o" secondAttribute="leading" id="rDU-ct-MMv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="诗词鉴赏" id="ukZ-gL-TUN"/>
+                    <navigationItem key="navigationItem" title="诗词鉴赏" id="ukZ-gL-TUN">
+                        <barButtonItem key="leftBarButtonItem" title="About" id="duN-fd-jwa">
+                            <connections>
+                                <segue destination="W9G-YB-8lU" kind="show" id="sKY-9v-ZZ6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="Xdm-V6-Lhg" id="p7q-QB-atN"/>
                     </connections>
@@ -98,6 +104,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Phd-oZ-a57" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="744.79999999999995" y="187.55622188905548"/>
+        </scene>
+        <!--关于-->
+        <scene sceneID="bn2-0H-j2a">
+            <objects>
+                <viewController title="关于" id="W9G-YB-8lU" customClass="AboutViewController" customModule="Poetry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IhT-s6-k16"/>
+                        <viewControllerLayoutGuide type="bottom" id="glg-LL-9vX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3FR-Zf-RbJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnP-1x-9h6">
+                                <rect key="frame" x="10" y="94" width="355" height="95.5"/>
+                                <gestureRecognizers/>
+                                <attributedString key="attributedText">
+                                    <fragment content="如您发现">
+                                        <attributes>
+                                            <color key="NSColor" red="0.19997376203536987" green="0.20001503825187683" blue="0.19997116923332214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="12" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="bug">
+                                        <attributes>
+                                            <color key="NSColor" red="0.19997376203536987" green="0.20001503825187683" blue="0.19997116923332214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="12" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="或提供建议请">
+                                        <attributes>
+                                            <color key="NSColor" red="0.19997376203536987" green="0.20001503825187683" blue="0.19997116923332214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="12" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="@ ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.19997376203536987" green="0.20001503825187683" blue="0.19997116923332214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="12" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="        woodtengfei@gmail.com ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.019375458359718323" green="0.39525395631790161" blue="0.73997920751571655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="12" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="谢谢！">
+                                        <attributes>
+                                            <color key="NSColor" red="0.19997376203536987" green="0.20001503825187683" blue="0.19997116923332214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="12" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YjJ-gO-UNl" appends="YES" id="OvS-90-lxd"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xnP-1x-9h6" secondAttribute="trailing" constant="10" id="e0k-eX-jKd"/>
+                            <constraint firstItem="xnP-1x-9h6" firstAttribute="leading" secondItem="3FR-Zf-RbJ" secondAttribute="leading" constant="10" id="qzY-2m-JGf"/>
+                            <constraint firstItem="xnP-1x-9h6" firstAttribute="top" secondItem="IhT-s6-k16" secondAttribute="bottom" constant="30" id="rWb-6o-nOy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lBk-uU-fNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YjJ-gO-UNl">
+                    <connections>
+                        <action selector="mail:" destination="W9G-YB-8lU" id="hed-Ns-tKU"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="745" y="904"/>
         </scene>
         <!--Poetry List View Controller-->
         <scene sceneID="Tam-un-owg">
@@ -267,7 +355,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XVJ-qp-oxb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NfP-vT-KAi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NfP-vT-KAi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.50644374589629582" green="0.44193654494436063" blue="0.35633564223584185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

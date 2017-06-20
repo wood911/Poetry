@@ -100,8 +100,9 @@ class PoetryMainViewController: UIViewController, UICollectionViewDataSource, Po
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let list = segue.destination as! PoetryListViewController
-        list.kindName = (sender as? PoetryKindItem)?.kindName.text
+        if let list = segue.destination as? PoetryListViewController {
+            list.kindName = (sender as? PoetryKindItem)?.kindName.text
+        }
     }
 
 }

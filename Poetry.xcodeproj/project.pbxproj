@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4118F7A61EF8B266009137DC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118F7A51EF8B266009137DC /* AboutViewController.swift */; };
 		413F0E2F1ED4064600587A6A /* Poetry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413F0E2E1ED4064600587A6A /* Poetry.storyboard */; };
 		413F0E331ED4064D00587A6A /* PoetryMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F0E301ED4064D00587A6A /* PoetryMainViewController.swift */; };
 		413F0E341ED4064D00587A6A /* PoetryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F0E311ED4064D00587A6A /* PoetryListViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4118F7A51EF8B266009137DC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		413F0E2E1ED4064600587A6A /* Poetry.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Poetry.storyboard; sourceTree = "<group>"; };
 		413F0E301ED4064D00587A6A /* PoetryMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoetryMainViewController.swift; sourceTree = "<group>"; };
 		413F0E311ED4064D00587A6A /* PoetryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoetryListViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				413F0E301ED4064D00587A6A /* PoetryMainViewController.swift */,
 				413F0E311ED4064D00587A6A /* PoetryListViewController.swift */,
 				413F0E321ED4064D00587A6A /* PoetryDetailViewController.swift */,
+				4118F7A51EF8B266009137DC /* AboutViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				413F0E351ED4064D00587A6A /* PoetryDetailViewController.swift in Sources */,
 				41C8E14F1ED3FC3F00E1ACE7 /* PoetryDBManager.swift in Sources */,
 				41C8E14E1ED3FC3F00E1ACE7 /* PoetryKind.swift in Sources */,
+				4118F7A61EF8B266009137DC /* AboutViewController.swift in Sources */,
 				413F0E331ED4064D00587A6A /* PoetryMainViewController.swift in Sources */,
 				413F0E341ED4064D00587A6A /* PoetryListViewController.swift in Sources */,
 				41C8E10E1ED3C75700E1ACE7 /* AppDelegate.swift in Sources */,
