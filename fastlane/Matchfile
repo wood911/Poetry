@@ -1,0 +1,11 @@
+git_url("https://gitlab.com/shepherdwtf/PoetryCertificates.git")
+
+type("development") # The default type, can be: appstore, adhoc, enterprise or development
+type("adhoc")
+type("appstore")
+
+app_identifier(["com.shepherd.Poetry"])
+username("powerwtf@live.com") # Your Apple Developer Portal username
+
+# For all available options run `fastlane match --help`
+# Remove the # in the beginning of the line to enable the other options
