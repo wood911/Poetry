@@ -7,3 +7,4 @@
 //
 
 #import "sqlite3.h"
+#import <JSPatchPlatform/JSPatch.h>

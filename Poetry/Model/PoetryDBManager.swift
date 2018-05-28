@@ -112,7 +112,11 @@ class PoetryDBManager: NSObject {
                 
                 sqlite3_finalize(stmt)
             }
-            sqlite3_close_v2(db)
+            if #available(iOS 8.2, *) {
+                sqlite3_close_v2(db)
+            } else {
+                sqlite3_close(db)
+            }
         }
         return poetries
     }
@@ -132,7 +136,11 @@ class PoetryDBManager: NSObject {
 
                 sqlite3_finalize(stmt)
             }
-            sqlite3_close_v2(db)
+            if #available(iOS 8.2, *) {
+                sqlite3_close_v2(db)
+            } else {
+                sqlite3_close(db)
+            }
         }
         return flag
     }
@@ -152,7 +160,11 @@ class PoetryDBManager: NSObject {
                 
                 sqlite3_finalize(stmt)
             }
-            sqlite3_close_v2(db)
+            if #available(iOS 8.2, *) {
+                sqlite3_close_v2(db)
+            } else {
+                sqlite3_close(db)
+            }
         }
         return flag
     }

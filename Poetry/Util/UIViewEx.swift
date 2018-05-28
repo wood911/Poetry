@@ -26,7 +26,7 @@ extension UIView {
         let frameW = self.frame.width
         let frameH = self.frame.height
         label.preferredMaxLayoutWidth = frameW - 60
-        let size = label.text!.boundingRect(with: CGSize(width: frameW - 60, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: label.font], context: nil).size
+        let size = label.text!.boundingRect(with: CGSize(width: frameW - 60, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: label.font], context: nil).size
         label.frame = CGRect(x: (frameW - size.width - 20) * 0.5, y: (frameH - size.height - 25) * 0.5 - 20, width: size.width + 20, height: size.height + 25)
         
         self.addSubview(label)
