@@ -48,7 +48,7 @@ class PoetryDetailViewController: UIViewController, AVSpeechSynthesizerDelegate,
         }
     }
     
-    func speechPoetry(_ sender: UIBarButtonItem) {
+    @objc func speechPoetry(_ sender: UIBarButtonItem) {
         if speech.isSpeaking {
             speech.stopSpeaking(at: .immediate)
         } else {

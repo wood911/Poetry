@@ -1,4 +1,4 @@
-git_url("https://gitlab.com/shepherdwtf/PoetryCertificates.git")
+git_url("https://gitlab.com/shepherdwtf/certificates.git")
 
 type("development") # The default type, can be: appstore, adhoc, enterprise or development
 type("adhoc")

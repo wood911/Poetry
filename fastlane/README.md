@@ -16,11 +16,26 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
+### ios debug
+```
+fastlane ios debug
+```
+Push a new debug build to the pgyer
 ### ios release
 ```
 fastlane ios release
 ```
-Push a new release build to the App Store
+Push a new release build to the pgyer
+### ios testflight
+```
+fastlane ios testflight
+```
+Push a new build to the TestFlight
+### ios appstore
+```
+fastlane ios appstore
+```
+Push a new build to the AppStore
 
 ----
 
