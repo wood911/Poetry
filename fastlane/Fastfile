@@ -22,7 +22,7 @@ platform :ios do
     register_devices(devices_file: "./devices.txt")
     match(type: "adhoc", force_for_new_devices: true)
     build_app(export_method: "ad-hoc", configuration: "Debug", scheme: "Poetry", silent: true, clean: true, output_directory: "~/Documents/Apps/Beta_#{Time.now.strftime('%Y-%m-%d_%H-%M-%S')}", output_name: "Poetry.ipa")
-    pgyer(api_key: "cf2cf2bd3acead35dce53edc894e1ce9", user_key: "99b69b65cfc05866adcf21ea933ff87f", update_description: "#{option[:desc]}\n测试环境")
+    pgyer(api_key: "f65681e61d88e21230b1129a24ffc01a", user_key: "e52d09e7a5e09e09f3d313fea668c53f", update_description: "#{option[:desc]}\n测试环境")
   end
   
   desc "Push a new release build to the pgyer"
@@ -30,7 +30,7 @@ platform :ios do
     register_devices(devices_file: "./devices.txt")
     match(type: "adhoc", force_for_new_devices: true)
     build_app(export_method: "ad-hoc", scheme: "Poetry", silent: true, clean: true, output_directory: "~/Documents/Apps/Release_#{Time.now.strftime('%Y-%m-%d_%H-%M-%S')}", output_name: "Poetry.ipa")
-    pgyer(api_key: "cf2cf2bd3acead35dce53edc894e1ce9", user_key: "99b69b65cfc05866adcf21ea933ff87f", update_description: "#{option[:desc]}\n正式环境")
+    pgyer(api_key: "f65681e61d88e21230b1129a24ffc01a", user_key: "e52d09e7a5e09e09f3d313fea668c53f", update_description: "#{option[:desc]}\n正式环境")
   end
 
   desc "Push a new build to the TestFlight"
@@ -43,7 +43,7 @@ platform :ios do
   desc "Push a new build to the AppStore"
   lane :appstore do
     set_changelog
-    increment_build_number
+    increment_build_number_in_plist
     match(type: "appstore")
     build_app(export_method: "app-store", scheme: "Poetry", clean: true, output_directory: "~/Documents/Apps/AppStore_#{Time.now.strftime('%Y-%m-%d_%H-%M-%S')}", output_name: "Poetry.ipa")
     upload_to_app_store
