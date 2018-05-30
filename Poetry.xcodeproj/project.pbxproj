@@ -13,6 +13,9 @@
 		413F0E341ED4064D00587A6A /* PoetryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F0E311ED4064D00587A6A /* PoetryListViewController.swift */; };
 		413F0E351ED4064D00587A6A /* PoetryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F0E321ED4064D00587A6A /* PoetryDetailViewController.swift */; };
 		4174F9C01ED408F900694961 /* Poetry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4174F9BF1ED408F900694961 /* Poetry.bundle */; };
+		418F732C1FDF5072005559D4 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418F732B1FDF5072005559D4 /* TestViewController.m */; };
+		418F732E1FDF5084005559D4 /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418F732D1FDF5084005559D4 /* JSPatchPlatform.framework */; };
+		418F73301FDF50AC005559D4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 418F732F1FDF50AC005559D4 /* libz.tbd */; };
 		41C8E10E1ED3C75700E1ACE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E10D1ED3C75700E1ACE7 /* AppDelegate.swift */; };
 		41C8E1151ED3C75700E1ACE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C8E1141ED3C75700E1ACE7 /* Assets.xcassets */; };
 		41C8E1181ED3C75700E1ACE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C8E1161ED3C75700E1ACE7 /* LaunchScreen.storyboard */; };
@@ -30,6 +33,10 @@
 		413F0E311ED4064D00587A6A /* PoetryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoetryListViewController.swift; sourceTree = "<group>"; };
 		413F0E321ED4064D00587A6A /* PoetryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoetryDetailViewController.swift; sourceTree = "<group>"; };
 		4174F9BF1ED408F900694961 /* Poetry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Poetry.bundle; sourceTree = "<group>"; };
+		418F732A1FDF5072005559D4 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		418F732B1FDF5072005559D4 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		418F732D1FDF5084005559D4 /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
+		418F732F1FDF50AC005559D4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		41C8E10A1ED3C75700E1ACE7 /* Poetry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poetry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C8E10D1ED3C75700E1ACE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41C8E1141ED3C75700E1ACE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418F73301FDF50AC005559D4 /* libz.tbd in Frameworks */,
 				41C8E1401ED3C99B00E1ACE7 /* libsqlite3.0.tbd in Frameworks */,
+				418F732E1FDF5084005559D4 /* JSPatchPlatform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +113,8 @@
 				413F0E311ED4064D00587A6A /* PoetryListViewController.swift */,
 				413F0E321ED4064D00587A6A /* PoetryDetailViewController.swift */,
 				4118F7A51EF8B266009137DC /* AboutViewController.swift */,
+				418F732A1FDF5072005559D4 /* TestViewController.h */,
+				418F732B1FDF5072005559D4 /* TestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -129,6 +140,8 @@
 		41C8E13E1ED3C99B00E1ACE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				418F732F1FDF50AC005559D4 /* libz.tbd */,
+				418F732D1FDF5084005559D4 /* JSPatchPlatform.framework */,
 				41C8E13F1ED3C99B00E1ACE7 /* libsqlite3.0.tbd */,
 			);
 			name = Frameworks;
@@ -220,6 +233,7 @@
 				41C8E14F1ED3FC3F00E1ACE7 /* PoetryDBManager.swift in Sources */,
 				41C8E14E1ED3FC3F00E1ACE7 /* PoetryKind.swift in Sources */,
 				4118F7A61EF8B266009137DC /* AboutViewController.swift in Sources */,
+				418F732C1FDF5072005559D4 /* TestViewController.m in Sources */,
 				413F0E331ED4064D00587A6A /* PoetryMainViewController.swift in Sources */,
 				413F0E341ED4064D00587A6A /* PoetryListViewController.swift in Sources */,
 				41C8E10E1ED3C75700E1ACE7 /* AppDelegate.swift in Sources */,
@@ -297,6 +311,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_EXPORT_DECL = "";
 			};
@@ -349,6 +364,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_EXPORT_DECL = "";
@@ -360,6 +376,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UD5YK4KV23;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Poetry/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -377,6 +397,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UD5YK4KV23;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Poetry/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

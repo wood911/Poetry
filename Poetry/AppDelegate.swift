@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        EbaTestCode.stwa43("e7539a2b41a78112")
+        EbaTestCode.strs4133x("-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQGC1/eh8sKhaa4qDZ+DrACZ5z\nPP46S9YyVdAhjIa8orolcgc2AJYNxQnU94HGd4Rbz/R3gVA8B6VplRJh7Yz43/P+\n1kaBls1TxUMBqYUhtTNFgK89NveaOAEU+V6XqxjKzc64DNw6/k2w1ZAmhRTFjJmK\nyslCmJVlbnZj0NqP5wIDAQAB\n-----END PUBLIC KEY-----")
+        EbaTestCode.sync()
+        
         return true
     }
 
@@ -35,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        EbaTestCode.sync()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
