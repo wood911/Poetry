@@ -368,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = UD5YK4KV23;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,6 +377,7 @@
 				INFOPLIST_FILE = Poetry/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shepherd.Poetry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Poetry-Bridging-Heade.h";
@@ -389,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = UD5YK4KV23;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -397,6 +400,7 @@
 				INFOPLIST_FILE = Poetry/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shepherd.Poetry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Poetry-Bridging-Heade.h";
