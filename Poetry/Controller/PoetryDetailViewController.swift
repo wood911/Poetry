@@ -124,7 +124,7 @@ class PoetryDetailViewController: UIViewController, AVSpeechSynthesizerDelegate,
         case 2:
             return 54
         case 3:
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         default:
             return 0
         }

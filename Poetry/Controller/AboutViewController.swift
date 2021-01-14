@@ -20,10 +20,6 @@ class AboutViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func mail(_ sender: UITapGestureRecognizer) {
-        UIApplication.shared.openURL(URL(string: "mailto://woodtengfei@gmail.com")!)
-    }
 
     /*
     // MARK: - Navigation

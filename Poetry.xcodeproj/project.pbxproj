@@ -13,8 +13,6 @@
 		413F0E341ED4064D00587A6A /* PoetryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F0E311ED4064D00587A6A /* PoetryListViewController.swift */; };
 		413F0E351ED4064D00587A6A /* PoetryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F0E321ED4064D00587A6A /* PoetryDetailViewController.swift */; };
 		4174F9C01ED408F900694961 /* Poetry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4174F9BF1ED408F900694961 /* Poetry.bundle */; };
-		418F732C1FDF5072005559D4 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418F732B1FDF5072005559D4 /* TestViewController.m */; };
-		418F732E1FDF5084005559D4 /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418F732D1FDF5084005559D4 /* JSPatchPlatform.framework */; };
 		418F73301FDF50AC005559D4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 418F732F1FDF50AC005559D4 /* libz.tbd */; };
 		41C8E10E1ED3C75700E1ACE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8E10D1ED3C75700E1ACE7 /* AppDelegate.swift */; };
 		41C8E1151ED3C75700E1ACE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C8E1141ED3C75700E1ACE7 /* Assets.xcassets */; };
@@ -33,8 +31,6 @@
 		413F0E311ED4064D00587A6A /* PoetryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoetryListViewController.swift; sourceTree = "<group>"; };
 		413F0E321ED4064D00587A6A /* PoetryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoetryDetailViewController.swift; sourceTree = "<group>"; };
 		4174F9BF1ED408F900694961 /* Poetry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Poetry.bundle; sourceTree = "<group>"; };
-		418F732A1FDF5072005559D4 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		418F732B1FDF5072005559D4 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		418F732D1FDF5084005559D4 /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
 		418F732F1FDF50AC005559D4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		41C8E10A1ED3C75700E1ACE7 /* Poetry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poetry.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +53,6 @@
 			files = (
 				418F73301FDF50AC005559D4 /* libz.tbd in Frameworks */,
 				41C8E1401ED3C99B00E1ACE7 /* libsqlite3.0.tbd in Frameworks */,
-				418F732E1FDF5084005559D4 /* JSPatchPlatform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,8 +108,6 @@
 				413F0E311ED4064D00587A6A /* PoetryListViewController.swift */,
 				413F0E321ED4064D00587A6A /* PoetryDetailViewController.swift */,
 				4118F7A51EF8B266009137DC /* AboutViewController.swift */,
-				418F732A1FDF5072005559D4 /* TestViewController.h */,
-				418F732B1FDF5072005559D4 /* TestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +190,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -233,7 +227,6 @@
 				41C8E14F1ED3FC3F00E1ACE7 /* PoetryDBManager.swift in Sources */,
 				41C8E14E1ED3FC3F00E1ACE7 /* PoetryKind.swift in Sources */,
 				4118F7A61EF8B266009137DC /* AboutViewController.swift in Sources */,
-				418F732C1FDF5072005559D4 /* TestViewController.m in Sources */,
 				413F0E331ED4064D00587A6A /* PoetryMainViewController.swift in Sources */,
 				413F0E341ED4064D00587A6A /* PoetryListViewController.swift in Sources */,
 				41C8E10E1ED3C75700E1ACE7 /* AppDelegate.swift in Sources */,
@@ -386,7 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shepherd.Poetry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Poetry-Bridging-Heade.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_EXPORT_DECL = "";
 			};
@@ -407,7 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shepherd.Poetry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Poetry-Bridging-Heade.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_EXPORT_DECL = "";
 			};

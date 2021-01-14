@@ -53,11 +53,11 @@ class PoetryListViewController: UIViewController, UITableViewDataSource, UITable
         return true
     }
     
-    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .delete
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         let poetry = poetries[indexPath.row]
         if editingStyle == .delete {
             let alert = UIAlertController(title: "温馨提示", message: "删除后将不可恢复", preferredStyle: .alert)
