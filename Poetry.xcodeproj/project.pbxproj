@@ -44,6 +44,7 @@
 		41C8E14B1ED3FC3F00E1ACE7 /* PoetryKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoetryKind.swift; sourceTree = "<group>"; };
 		41C8E14C1ED3FC3F00E1ACE7 /* PoetryDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoetryDBManager.swift; sourceTree = "<group>"; };
 		41C8E1511ED3FCF200E1ACE7 /* UIViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
+		6E72E4D425B1524600EAC842 /* Poetry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Poetry.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 		41C8E10C1ED3C75700E1ACE7 /* Poetry */ = {
 			isa = PBXGroup;
 			children = (
+				6E72E4D425B1524600EAC842 /* Poetry.entitlements */,
 				41C8E12D1ED3C89A00E1ACE7 /* Controller */,
 				41C8E1311ED3C89A00E1ACE7 /* View */,
 				41C8E1331ED3C89A00E1ACE7 /* Model */,
@@ -368,7 +370,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 10;
+				CODE_SIGN_ENTITLEMENTS = Poetry/Poetry.entitlements;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = UD5YK4KV23;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -377,7 +380,7 @@
 				INFOPLIST_FILE = Poetry/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shepherd.Poetry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Poetry-Bridging-Heade.h";
@@ -391,7 +394,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 10;
+				CODE_SIGN_ENTITLEMENTS = Poetry/Poetry.entitlements;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = UD5YK4KV23;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -400,7 +404,7 @@
 				INFOPLIST_FILE = Poetry/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shepherd.Poetry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Poetry-Bridging-Heade.h";
